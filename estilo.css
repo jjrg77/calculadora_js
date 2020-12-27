@@ -1,0 +1,54 @@
+h1 {
+    color:rgb(227, 247, 248);
+    text-align: center;
+
+}
+
+
+body {
+    background-color: rgb(33, 219, 219);
+    
+}
+
+.calculadora {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.calculadora > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: blue;
+    color: white;
+}
+
+.output {
+    grid-column: -1 / 1;
+    background-color: rgb(3, 44, 56);
+    display:center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: inherit;
+    padding: 10px;
+   /*  word-wrap: break-word;
+    word-break: break-all; */
+}
+
+.output .display {
+    color: black;
+    font-size: 1.53rem;
+    text-align: right;
+
+}
+
+.calculadora > button:hover {
+    background-color: white;
+    color:black;
+    font-size: 4rem;
+}
+
